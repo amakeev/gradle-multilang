@@ -1,0 +1,3 @@
+
+include "java:shared", "java:api", "java:services:webservice", "java:services:shared"
+include "cpp:application"

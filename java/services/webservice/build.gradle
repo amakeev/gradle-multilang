@@ -1,0 +1,9 @@
+apply plugin: 'war'
+
+version = '2.5'
+
+dependencies {
+    compile project(':java:shared'), 'commons-collections:commons-collections:3.2.2@jar', 'commons-io:commons-io:1.2', 'commons-lang:commons-lang:2.4@jar'
+    compile project(path: ':java:api', configuration: 'spi')
+    runtime project(':java:api')
+}
